@@ -1,0 +1,32 @@
+html{ font-family: sans-serif; text-align: center}
+       
+body{ display: inline-block; text-align: left}
+      
+output{font-size: small }
+
+*:required, .obligatorio{
+        border:thin solid red;
+}
+input[type=number], .numero{text-align: right;}
+dfn{font-weight: bold;}
+
+form em {
+        font-size:small ;
+}
+label, legend{ font-weight: bold;}
+
+br + output, fieldset + output, footer, form em{ font-size: small;}
+
+.marco{
+        border: 10px solid rgb(255, 113, 51);
+        align-content: center;
+}
+
+output{
+        display: block;
+}
+
+.boton{
+        background-color: rgb(214, 234, 248);
+        border: 6px outset #ffff;
+}
