@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Textos</h1>
+    </header>
+    <form id="forma" action="javascript:procesa();">
+        <h3>El borde azul indica obligatorio </h3>
+        <p>
+            <label accesskey="N">
+                Nombre <br>
+                <input type="text" name="nombre" autofocus required 
+                maxlength="30" size="33" placeholder="1 a 30 caracteres">
+            </label>
+            <br><output id="salidaNombre"></output>
+        </p>
+
+        <p>
+            <label accesskey="S">
+                Secreto <br>
+                <input type="password" name="secreto" autocomplete="off" autofocus required 
+                maxlength="30" size="33" placeholder="1 a 30 caracteres">
+            </label>
+            <br><output id="salidaSecreto"></output>
+        </p>
+
+        <p>
+            <label accesskey="I">
+                Navegador de internet <br>
+                <input type="text" name="navegador" equired list="navegadores">
+            </label>
+            <br><output id="salidaNavegador"></output>
+        </p>
+
+
+        <p>
+            <label accesskey="I">
+                Navegador de internet <br>
+                <input type="text" name="navegador"  required list="navegadores">
+            </label>
+            <br><output id="salidaNavegador"></output>
+        </p>
+
+        
+        <p>
+            <label accesskey="U">
+                Usuario<br>
+                <input type="text" name="usuario" pattern="[A-Za-z0-9]{4,16}" required 
+                maxlength="16" placeholder="4 a 16 letras o digitos" size="16">
+            </label>
+            <br><output id="salidaUsuario"></output>
+        </p>
+
+        
+        <p>
+            <label accesskey="U">
+                URL favorita<br>
+                <input type="url" name="url" size="13"  required 
+                value="http://">
+            </label>
+            <br><output id="salidaUrl"></output>
+        </p>
+
+         
+        <p>
+            <label accesskey="U">
+                Telefono<br>
+                <input type="tel" name="telefono"  size="16"  required 
+                maxlength="16" placeholder="10 a 14 digitos"> 
+            </label>
+            <br><output id="salidaTel"></output>
+        </p>
+
+        <p><input type="submit" value="Procesar"></p>
+    </form>
+
+    <footer>
+        Copyright Yomerengues 
+    </footer>
+
+    <datalist id="navegadores">
+        <option value="Chrome">
+        <option value="Firefox">
+        <option value="Opera">
+        <option value="Edge">
+        <option value="Dolphin">
+    </datalist>
+
+    <script src="../js/saludo.js"></script>
+</body>
+</html>
